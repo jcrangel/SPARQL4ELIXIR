@@ -19,6 +19,6 @@
 - [swisslipids](https://www.swisslipids.org/#/)
 
 
-# Potential future public SPARQL endpoint 
-[orphanet](https://www.orpha.net)
-[BioDataFuse](https://biodatafuse.org)
+# Potential future public SPARQL endpoints 
+- [orphanet](https://www.orpha.net)
+- [BioDataFuse](https://biodatafuse.org)
