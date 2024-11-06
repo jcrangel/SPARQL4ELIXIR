@@ -1,0 +1,189 @@
+[
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .",
+    "question": "What is the label of the RDF class http://rdf.rhea-db.org/ReactionSide?",
+    "sparql_query": "SELECT ?label \nWHERE {\n  <http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reaction side"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .",
+    "question": "What is the label of the class http://rdf.rhea-db.org/ReactionParticipant?",
+    "sparql_query": "SELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reaction participant"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .\n #LABELS:\n<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .",
+    "question": "What is the label for the class 'http://rdf.rhea-db.org/DirectionalReaction' in the RDF schema?",
+    "sparql_query": "SELECT ?label \nWHERE { \n  <http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Directional reaction"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#comment> \"A reaction side in a chemical reaction. Contains one or more reaction participants.\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .",
+    "question": "What is the comment for the class 'Reaction side' in the Rhea database?",
+    "sparql_query": "SELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A reaction side in a chemical reaction. Contains one or more reaction participants."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> \"A reaction participant. Contained in a reaction side.\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .",
+    "question": "What is the comment associated with the Reaction Participant in the RDF Rhea DB?",
+    "sparql_query": "SELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A reaction participant. Contained in a reaction side."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical reaction, with the direction specified by substrates and products.\" .\n #LABELS:\n<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .",
+    "question": "What is the comment for the class of \"Directional Reaction\" in RDF Rhea database?",
+    "sparql_query": "SELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical reaction, with the direction specified by substrates and products."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Approved> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Status> .\n #LABELS:\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .",
+    "question": "What is the label of the subclass of the class \"Approved\" in the Rhea database?",
+    "sparql_query": "SELECT ?label \nWHERE {\n  <http://rdf.rhea-db.org/Approved> <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?subclass .\n  ?subclass <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Status"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Out> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Location> .\n #LABELS:\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .",
+    "question": "What is the subclass of the class Out in the Rhea database?",
+    "sparql_query": "SELECT ?object\nWHERE {\n  <http://rdf.rhea-db.org/Out> <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?object .\n}",
+    "query_results": [
+      {
+        "?object": "http://rdf.rhea-db.org/Location"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n #LABELS:\n<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the super class of 'Small molecule' in the context of Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rhea: <http://rdf.rhea-db.org/>\n\nSELECT ?superClass ?label\nWHERE {\n  rhea:SmallMolecule rdfs:subClassOf ?superClass .\n  ?superClass rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?superClass": "http://rdf.rhea-db.org/Compound",
+        "?label": "Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Approved> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Status> .\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .\n #LABELS:\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .",
+    "question": "What is the label of the subclass of the Approved class in the Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://rdf.rhea-db.org/>\n\nSELECT ?label\nWHERE {\n  rdf:Approved rdfs:subClassOf ?subClass .\n  ?subClass rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Status"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Out> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Location> .\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .\n #LABELS:\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .",
+    "question": "What is the subclass of the class \"Out\" in Rhea Database and what is its label?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rhea: <http://rdf.rhea-db.org/>\n\nSELECT ?subclass ?label\nWHERE {\n  rhea:Out rdfs:subClassOf ?subclass .\n  ?subclass rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?subclass": "http://rdf.rhea-db.org/Location",
+        "?label": "Location"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .\n #LABELS:\n<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the superclass of the class \"Small molecule\" and what are their labels?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rhea: <http://rdf.rhea-db.org/>\n\nSELECT ?superClass ?label\nWHERE {\n  rhea:SmallMolecule rdfs:subClassOf ?superClass .\n  ?superClass rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?superClass": "http://rdf.rhea-db.org/Compound",
+        "?label": "Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Approved> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Status> .\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#comment> \"A curation status.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .",
+    "question": "What is the comment associated with the subclass of \"Approved\" status in Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://rdf.rhea-db.org/>\nSELECT ?comment \nWHERE {\n  rdf:Approved rdfs:subClassOf ?status .\n  ?status rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A curation status."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Out> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Location> .\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#comment> \"A location for a reaction participant.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .",
+    "question": "What is the comment for the class that is subclasses of the 'Out' class in the Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \nPREFIX rhea: <http://rdf.rhea-db.org/>\n\nSELECT ?comment\nWHERE {\n  rhea:Out rdfs:subClassOf ?class .\n  ?class rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A location for a reaction participant."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical compound.\" .\n #LABELS:\n<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the comment associated with the class that \"Small molecule\" is a subclass of?",
+    "sparql_query": "SELECT ?comment WHERE {\n  <http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?class .\n  ?class <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical compound."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/GenericCompound> .\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n #LABELS:\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .\n<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polypeptide\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the superclass of the Generic Polypeptide and what is the superclass of that class in the Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?superclass ?superclass2 \nWHERE {\n  <http://rdf.rhea-db.org/GenericPolypeptide> rdfs:subClassOf ?superclass .\n  ?superclass rdfs:subClassOf ?superclass2 .\n}",
+    "query_results": [
+      {
+        "?superclass": "http://rdf.rhea-db.org/GenericCompound",
+        "?superclass2": "http://rdf.rhea-db.org/Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/GenericCompound> .\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n #LABELS:\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .\n<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polynucleotide\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the superclass of the class \"Generic Polynucleotide\" and what is the superclass of that superclass?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?superclass ?superclass2 WHERE {\n  <http://rdf.rhea-db.org/GenericPolynucleotide> rdfs:subClassOf ?superclass .\n  ?superclass rdfs:subClassOf ?superclass2 .\n}",
+    "query_results": [
+      {
+        "?superclass": "http://rdf.rhea-db.org/GenericCompound",
+        "?superclass2": "http://rdf.rhea-db.org/Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/GenericCompound> .\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdf.rhea-db.org/Compound> .\n #LABELS:\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .\n<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic small molecule\" .\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": "What is the subclass hierarchy of the 'Generic Small Molecule' in the Rhea database?",
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rhea: <http://rdf.rhea-db.org/>\n\nSELECT ?subject ?label ?object ?objectLabel WHERE {\n  rhea:GenericSmallMolecule rdfs:subClassOf ?object .\n  rhea:GenericSmallMolecule rdfs:label ?label .\n  ?object rdfs:label ?objectLabel .\n}",
+    "query_results": [
+      {
+        "?object": "http://rdf.rhea-db.org/GenericCompound",
+        "?label": "Generic small molecule",
+        "?objectLabel": "Generic compound"
+      }
+    ]
+  }
+]
