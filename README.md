@@ -7,3 +7,15 @@
 # Code
 `sparql4elixir`
 
+
+# Elixir Data 
+
+# with SPARQL Endpoints
+
+- [BGEE] (https://www.bgee.org/sparql/)
+- [OMA] (https://sparql.omabrowser.org/lode/sparql)
+- [Uniprot] (https://sparql.uniprot.org/)
+- [Rhea] (https://sparql.rhea-db.org/sparql)
+
+# No Endpoint
+- [swisslipids](https://www.swisslipids.org/#/)
