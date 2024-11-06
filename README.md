@@ -16,6 +16,9 @@
 - [OMA] (https://sparql.omabrowser.org/lode/sparql)
 - [Uniprot] (https://sparql.uniprot.org/)
 - [Rhea] (https://sparql.rhea-db.org/sparql)
-
-# No Endpoint
 - [swisslipids](https://www.swisslipids.org/#/)
+
+
+# Potential future public SPARQL endpoints 
+- [orphanet](https://www.orpha.net)
+- [BioDataFuse](https://biodatafuse.org)
