@@ -1,0 +1,498 @@
+[
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#comment> \"A generic compound that is a polypeptide. Have one or or more reactive part(s) with chemical structure(s).\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polypeptide\" .",
+    "question": [
+      "What is a generic polypeptide according to the Rhea database?",
+      "Can you explain what a generic polypeptide is in the Rhea database?",
+      "Could you tell me the definition of a generic polypeptide in the Rhea database?",
+      "What does the Rhea database say about a generic polypeptide?",
+      "How does the Rhea database define a generic polypeptide?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/GenericPolypeptide> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A generic compound that is a polypeptide. Have one or or more reactive part(s) with chemical structure(s)."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polypeptide\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polypeptide\" .",
+    "question": [
+      "What is the label of the GenericPolypeptide in Rhea database?",
+      "What is the name of the GenericPolypeptide in the Rhea database?",
+      "What's the descriptor for the GenericPolypeptide in Rhea?",
+      "How is the GenericPolypeptide referred to in the Rhea database?",
+      "Could you tell me the label of the GenericPolypeptide in Rhea database?"
+    ],
+    "sparql_query": "SELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/GenericPolypeptide> <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Generic polypeptide"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical compound that is a small molecule. A subclass of a given ChEBI chemical entity.\" .\n #LABELS:\n<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .",
+    "question": [
+      "What is the comment associated with the \"Small Molecule\" entity in the Rhea knowledge base?",
+      "Can you tell me the comment for the \"Small Molecule\" entity in the Rhea database?",
+      "What information is provided in the comment for the \"Small Molecule\" in Rhea?",
+      "Can you provide the comment for the \"Small Molecule\" from the Rhea knowledge base?",
+      "What does the Rhea knowledge base say about the \"Small Molecule\"?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/SmallMolecule> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical compound that is a small molecule. A subclass of a given ChEBI chemical entity."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .\n #LABELS:\n<http://rdf.rhea-db.org/SmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Small molecule\" .",
+    "question": [
+      "What does the label \"Small Molecule\" in the Rhea database refer to?",
+      "Can you tell me what the \"Small Molecule\" label in the Rhea database represents?",
+      "What is the meaning of \"Small Molecule\" in the Rhea database?",
+      "What is represented by the label \"Small Molecule\" in the Rhea database?",
+      "In the Rhea database, what does \"Small Molecule\" label stand for?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\n\nSELECT ?subject ?predicate ?object\nWHERE {\n  ?subject rdfs:label \"Small molecule\" .\n  ?subject ?predicate ?object .\n}",
+    "query_results": [
+      {
+        "?subject": "http://rdf.rhea-db.org/SmallMolecule",
+        "?predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "?object": "http://www.w3.org/2000/01/rdf-schema#Class"
+      },
+      {
+        "?subject": "http://rdf.rhea-db.org/SmallMolecule",
+        "?predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+        "?object": "Small molecule"
+      },
+      {
+        "?subject": "http://rdf.rhea-db.org/SmallMolecule",
+        "?predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "?object": "A chemical compound that is a small molecule. A subclass of a given ChEBI chemical entity."
+      },
+      {
+        "?subject": "http://rdf.rhea-db.org/SmallMolecule",
+        "?predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "?object": "http://rdf.rhea-db.org/Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical reaction, with the direction specified by substrates and products.\" .\n #LABELS:\n<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .",
+    "question": [
+      "What is the comment for the Rhea reaction \"DirectionalReaction\"?",
+      "Can you provide the comment for \"DirectionalReaction\" in Rhea reaction?",
+      "What does the comment field say for \"DirectionalReaction\" Rhea reaction?",
+      "What is the description for the Rhea reaction called \"DirectionalReaction\"?",
+      "Can you tell me what the comment for the \"DirectionalReaction\" in Rhea reactions is?"
+    ],
+    "sparql_query": "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/DirectionalReaction> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical reaction, with the direction specified by substrates and products."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .\n #LABELS:\n<http://rdf.rhea-db.org/DirectionalReaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Directional reaction\" .",
+    "question": [
+      "What is the label for the Directional Reaction class in Rhea DB?",
+      "Can you tell me the label for Directional Reaction class in Rhea database?",
+      "How is the class Directional Reaction labeled in Rhea DB?",
+      "What name does the Directional Reaction class go by in Rhea DB?",
+      "Can you provide the label for the class Directional Reaction in Rhea DB?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nSELECT ?label\nWHERE {\n  rh:DirectionalReaction rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Directional reaction"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> \"A reaction participant. Contained in a reaction side.\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .",
+    "question": [
+      "What is the comment for the \"Reaction participant\" class in the Rhea database?",
+      "What does \"Reaction participant\" class represent in Rhea database?",
+      "What description is provided for the \"Reaction participant\" class in Rhea database?",
+      "Can you tell me about the \"Reaction participant\" class in Rhea database?",
+      "What information is given about the \"Reaction participant\" class in Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/ReactionParticipant> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A reaction participant. Contained in a reaction side."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionParticipant> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction participant\" .",
+    "question": [
+      "What is the label for the Reaction participant in the Rhea database?",
+      "Can you tell me the label for the Reaction participant in Rhea?",
+      "I'm looking for the label for the Reaction participant in Rhea, do you know it?",
+      "Could you find the label for the Reaction participant in Rhea?",
+      "In the Rhea database, what is the label for the Reaction participant?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/ReactionParticipant> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reaction participant"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .",
+    "question": [
+      "What is the label of the class \"ReactionSide\" in Rhea database?",
+      "Can you tell me the label of \"ReactionSide\" class in Rhea database?",
+      "Do you know the label of \"ReactionSide\" in Rhea database?",
+      "Could you let me know the label of \"ReactionSide\" in Rhea database?",
+      "What's the label of the class \"ReactionSide\" in Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/ReactionSide> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reaction side"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#comment> \"A reaction side in a chemical reaction. Contains one or more reaction participants.\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactionSide> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction side\" .",
+    "question": [
+      "What is the comment description of the ReactionSide class in the Rhea database?",
+      "Can you describe the ReactionSide class in the Rhea database?",
+      "What information is provided in the comment section for the ReactionSide class in the Rhea database?",
+      "How is the ReactionSide class described in the Rhea database comments section?",
+      "What details are given in the comment description about the ReactionSide class in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/ReactionSide> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A reaction side in a chemical reaction. Contains one or more reaction participants."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Reaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction\" .\n #LABELS:\n<http://rdf.rhea-db.org/Reaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction\" .",
+    "question": [
+      "What is the label of the reaction class in Rhea database?",
+      "Can you tell me the name of the reaction class in Rhea database?",
+      "What is the reaction class called in Rhea database?"
+    ],
+    "sparql_query": "SELECT ?label WHERE {\n<http://rdf.rhea-db.org/Reaction> <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reaction"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Reaction> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical reaction, with unspecified direction.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Reaction> <http://www.w3.org/2000/01/rdf-schema#label> \"Reaction\" .",
+    "question": [
+      "What is the comment of the \"Reaction\" entity in the Rhea database?",
+      "Can you tell me the annotation for the \"Reaction\" class in the Rhea database?",
+      "What annotation is associated with the \"Reaction\" concept in the Rhea database?",
+      "What is the description provided for \"Reaction\" in the Rhea database?",
+      "What is the explanation associated with the \"Reaction\" entity in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/Reaction> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical reaction, with unspecified direction."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Polymer> <http://www.w3.org/2000/01/rdf-schema#label> \"Polymer\" .\n #LABELS:\n<http://rdf.rhea-db.org/Polymer> <http://www.w3.org/2000/01/rdf-schema#label> \"Polymer\" .",
+    "question": [
+      "What is the label of the Polymer class in Rhea database?",
+      "Can you tell me the label of the Polymer class in Rhea database?",
+      "What is the name of the Polymer class in Rhea database?",
+      "Do you know the label of the Polymer class in Rhea database?",
+      "Can you find the label of the Polymer class in Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/Polymer> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Polymer"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Polymer> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical compound that is a polymer. Described by a polymerization index, and an underlying polymer from ChEBI.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Polymer> <http://www.w3.org/2000/01/rdf-schema#label> \"Polymer\" .",
+    "question": [
+      "What is the description of the polymer in the Rhea database?",
+      "What is the comment for the polymer in the Rhea database?",
+      "How is the polymer described in the Rhea database?",
+      "Can you tell me the description of the polymer according to the Rhea database?",
+      "What does the Rhea database say about the polymer?"
+    ],
+    "sparql_query": "SELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/Polymer> <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical compound that is a polymer. Described by a polymerization index, and an underlying polymer from ChEBI."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#comment> \"A generic compound that is a polynucleotide. Have one or or more reactive part(s) with chemical structure(s).\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polynucleotide\" .",
+    "question": [
+      "Can you provide the comment for the GenericPolynucleotide class in the Rhea database?",
+      "What is the description of the GenericPolynucleotide category in Rhea database?",
+      "Can you tell me the comment related to the GenericPolynucleotide class in the Rhea database?",
+      "What does the GenericPolynucleotide class in the Rhea database represent?",
+      "Could you give me the description of the GenericPolynucleotide class in Rhea?"
+    ],
+    "sparql_query": "SELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#comment> ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A generic compound that is a polynucleotide. Have one or or more reactive part(s) with chemical structure(s)."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polynucleotide\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericPolynucleotide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic polynucleotide\" .",
+    "question": [
+      "What is labeled as \"Generic polynucleotide\" in the Rhea database?",
+      "Can you find any reference to \"Generic polynucleotide\" in the Rhea database?",
+      "Is there any entity in the Rhea database tagged as \"Generic polynucleotide\"?",
+      "Could you search for a \"Generic polynucleotide\" in the Rhea database?",
+      "Does the Rhea database contain a label for \"Generic polynucleotide\"?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\n\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/GenericPolynucleotide> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Generic polynucleotide"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactivePart> <http://www.w3.org/2000/01/rdf-schema#label> \"Reactive part in a generic compoound\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactivePart> <http://www.w3.org/2000/01/rdf-schema#label> \"Reactive part in a generic compoound\" .",
+    "question": [
+      "What is the label of the reactive part in a generic compound in the Rhea database?",
+      "Can you tell me the label for the reactive part of a generic compound in Rhea database?",
+      "What's the identification label for the reactive part in a generic compound according to Rhea database?",
+      "Could you provide the label for the reactive part of a generic compound as per Rhea database?",
+      "In the Rhea database, what is the label assigned to the reactive part in a generic compound?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/ReactivePart> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Reactive part in a generic compoound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/ReactivePart> <http://www.w3.org/2000/01/rdf-schema#comment> \"A reactive part in a generic compound, with a defined chemical structure. A subclass of a given ChEBI chemical entity.\" .\n #LABELS:\n<http://rdf.rhea-db.org/ReactivePart> <http://www.w3.org/2000/01/rdf-schema#label> \"Reactive part in a generic compoound\" .",
+    "question": [
+      "What is the comment attached to the ReactivePart in the Rhea database?",
+      "Can you tell me about the ReactivePart in the Rhea database?",
+      "What does the Rhea database have to say about the ReactivePart?",
+      "How does the Rhea database describe the ReactivePart?",
+      "What information is provided in the comment of the ReactivePart in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\n\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/ReactivePart> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A reactive part in a generic compound, with a defined chemical structure. A subclass of a given ChEBI chemical entity."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#comment> \"A curation status.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .",
+    "question": [
+      "What is the comment for the status in Rhea database?",
+      "Can you tell me about the status in Rhea database?",
+      "What does the status in Rhea database mean?",
+      "What is the description of the status in Rhea database?",
+      "Can you provide some details about the status in Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment \nWHERE {\n  <http://rdf.rhea-db.org/Status> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A curation status."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .\n #LABELS:\n<http://rdf.rhea-db.org/Status> <http://www.w3.org/2000/01/rdf-schema#label> \"Status\" .",
+    "question": [
+      "What is the label of the status in the Rhea database?",
+      "Can you show me the label of the status in the Rhea database?",
+      "Could you tell me the label of the status in the Rhea database?",
+      "What does the status label say in the Rhea database?",
+      "Can you find the label of the status in the Rhea database for me?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/Status> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Status"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .\n #LABELS:\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": [
+      "What is the label of the compound in the Rhea database?",
+      "Can you tell me the name of the compound in the Rhea database?",
+      "What is the compound referred to in the Rhea database?",
+      "Do you know the label of the compound in the Rhea database?",
+      "Can you find the name of the compound in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/Compound> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical compound.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Compound> <http://www.w3.org/2000/01/rdf-schema#label> \"Compound\" .",
+    "question": [
+      "What is the comment of the Compound in the Rhea database?",
+      "Can you tell me the comment associated with the Compound in Rhea?",
+      "What information does the Rhea database provide in the comments for the Compound?",
+      "Could you provide the comment for the Compound in the Rhea database?",
+      "What does the comment say for the Compound in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/Compound> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical compound."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .\n #LABELS:\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .",
+    "question": [
+      "What is the label for the Location class in the Rhea database?",
+      "Can you tell me the label for the Location class in the Rhea database?",
+      "What's the label assigned to the Location class in Rhea?",
+      "Could you find the label for the Location class in Rhea's database?",
+      "I'm looking for the label of the Location class in the Rhea database."
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/Location> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Location"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#comment> \"A location for a reaction participant.\" .\n #LABELS:\n<http://rdf.rhea-db.org/Location> <http://www.w3.org/2000/01/rdf-schema#label> \"Location\" .",
+    "question": [
+      "What is the comment associated with the location for a reaction participant in the Rhea database?",
+      "What kind of comment is linked with the reaction participant's location in Rhea database?",
+      "Can you provide the comment related to the location for a reaction participant as per Rhea database?",
+      "What comment does the Rhea database have for the location of a reaction participant?",
+      "In the Rhea database, what comment is associated with the location of a reaction participant?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label ?comment\nWHERE {\n  <http://rdf.rhea-db.org/Location> rdfs:comment ?comment .\n  <http://rdf.rhea-db.org/Location> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?comment": "A location for a reaction participant.",
+        "?label": "Location"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .",
+    "question": [
+      "What is the label of the generic compound in Rhea database?",
+      "Can you tell me the label of the generic compound in Rhea database?",
+      "What is the name of the generic compound according to Rhea database?",
+      "Do you know the label of the generic compound in Rhea database?",
+      "Could you provide the label of the generic compound from Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?label\nWHERE {\n  <http://rdf.rhea-db.org/GenericCompound> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Generic compound"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#comment> \"A chemical compound whose complete chemical structure is not described. Have one or or more reactive part(s) with chemical structure(s).\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericCompound> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic compound\" .",
+    "question": [
+      "What is the comment on the class 'GenericCompound' in the Rhea database?",
+      "Can you tell me the description of the 'GenericCompound' class in the Rhea database?",
+      "What information is provided about the 'GenericCompound' class in the Rhea database?",
+      "What does the 'GenericCompound' class in the Rhea database represent?",
+      "What does the Rhea database say about the 'GenericCompound' class?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/GenericCompound> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A chemical compound whose complete chemical structure is not described. Have one or or more reactive part(s) with chemical structure(s)."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#comment> \"A generic compound that is a small molecule. Have one or or more reactive part(s) with chemical structure(s).\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic small molecule\" .",
+    "question": [
+      "\"What is the comment for the class 'GenericSmallMolecule' in the Rhea database?\"",
+      "\"What is the description of the 'GenericSmallMolecule' class in Rhea?\"",
+      "\"Can you tell me the comment associated with the 'GenericSmallMolecule' in Rhea?\"",
+      "\"I'm looking for the comment or description of 'GenericSmallMolecule' in the Rhea database, can you provide that?\"",
+      "\"Could you find the comment for the 'GenericSmallMolecule' class in Rhea?\""
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE {\n  <http://rdf.rhea-db.org/GenericSmallMolecule> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A generic compound that is a small molecule. Have one or or more reactive part(s) with chemical structure(s)."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic small molecule\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericSmallMolecule> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic small molecule\" .",
+    "question": [
+      "What is the label of the class \"GenericSmallMolecule\" in the Rhea database?",
+      "Can you tell me the label associated with the \"GenericSmallMolecule\" class in Rhea?",
+      "How is the class \"GenericSmallMolecule\" labelled in the Rhea database?",
+      "What's the label for \"GenericSmallMolecule\" in the Rhea database?",
+      "Could you find the label for class \"GenericSmallMolecule\" in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rhea: <http://rdf.rhea-db.org/GenericSmallMolecule>\n\nSELECT ?label\nWHERE {\n  rhea: rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Generic small molecule"
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericHeteropolysaccharide> <http://www.w3.org/2000/01/rdf-schema#comment> \"A generic compound that is an heteropolysaccharide. Have one or or more reactive part(s) with chemical structure(s).\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericHeteropolysaccharide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic heteropolysaccharide\" .",
+    "question": [
+      "What is the comment for the GenericHeteropolysaccharide class in the RDF Rhea database?",
+      "Can you tell me the description for the GenericHeteropolysaccharide class in the RDF Rhea database?",
+      "What description does the GenericHeteropolysaccharide class have in the RDF Rhea database?",
+      "Could you provide the comment for the GenericHeteropolysaccharide class in the RDF Rhea database?",
+      "What is the description attached to the GenericHeteropolysaccharide class in the RDF Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?comment\nWHERE { \n    <http://rdf.rhea-db.org/GenericHeteropolysaccharide> rdfs:comment ?comment .\n}",
+    "query_results": [
+      {
+        "?comment": "A generic compound that is an heteropolysaccharide. Have one or or more reactive part(s) with chemical structure(s)."
+      }
+    ]
+  },
+  {
+    "sample": "<http://rdf.rhea-db.org/GenericHeteropolysaccharide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic heteropolysaccharide\" .\n #LABELS:\n<http://rdf.rhea-db.org/GenericHeteropolysaccharide> <http://www.w3.org/2000/01/rdf-schema#label> \"Generic heteropolysaccharide\" .",
+    "question": [
+      "What is the label of the GenericHeteropolysaccharide class in the Rhea database?",
+      "Can you tell me the label of the GenericHeteropolysaccharide class in the Rhea database?",
+      "What is GenericHeteropolysaccharide known as in the Rhea database?",
+      "Can you provide the label of GenericHeteropolysaccharide in the Rhea database?",
+      "What is the alternate name for GenericHeteropolysaccharide in the Rhea database?"
+    ],
+    "sparql_query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\n\nSELECT ?label \nWHERE {\n  <http://rdf.rhea-db.org/GenericHeteropolysaccharide> rdfs:label ?label .\n}",
+    "query_results": [
+      {
+        "?label": "Generic heteropolysaccharide"
+      }
+    ]
+  }
+]
